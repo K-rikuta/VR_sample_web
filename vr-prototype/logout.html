@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ログアウト - VR貸し出しシステム</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ナビバー -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand text-warning fw-bold" href="#">VR貸し出しシステム</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="ナビゲーションの切り替え">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="register.html">新規登録</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">ログイン</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="notice.html">注意事項</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="terms.html">利用規約</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            メニュー
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="profile.html">プロフィール</a></li>
+            <li><a class="dropdown-item" href="settings.html">設定</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="logout.html">ログアウト</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- ナビバーここまで -->
+
+<!-- メインコンテンツ -->
+<div class="bg-vr">
+  <div class="center-content">
+    <div class="main-title">ログアウト</div>
+    <p>本当にログアウトしますか？</p>
+    <a href="index.html" class="btn btn-warning start-button">はい、ログアウトします</a>
+    <a href="index.html" class="btn btn-secondary start-button">キャンセル</a>
+  </div>
+</div>
+
+<!-- BootstrapのJS（動的なパーツ用） -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

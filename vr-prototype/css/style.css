@@ -1,0 +1,150 @@
+body, html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  background: #e8f5e9; /* 緑系の淡い背景 */
+}
+
+.bg-vr {
+  background-color: #e0f7fa; /* 薄い水色 */
+  height: 100vh;
+  position: relative;
+  color: #333;
+}
+
+.center-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.main-title {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-top: 40px;
+  margin-bottom: 60px !important;
+  color: #388e3c;
+}
+
+.start-button {
+  font-size: 1.5rem;
+  padding: 1rem 2rem;
+  transition: background-color 0.3s ease;
+}
+
+.start-button:hover {
+  background-color: #ffc107; /* ボタンのホバー時の色 */
+}
+
+.navbar,
+.dropdown-menu {
+  background: #43a047 !important; /* 濃い緑 */
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link,
+.navbar .dropdown-item {
+  color: #fff !important;
+}
+
+.btn-primary {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+  color: #fff;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.btn-primary:hover, .btn-primary:focus {
+  background-color: #388e3c;
+  border-color: #388e3c;
+  color: #fff;
+  box-shadow: 0 0 16px 4px #a5d6a7;
+}
+
+.btn-warning {
+  background-color: #c8e6c9;
+  color: #388e3c;
+  border-color: #c8e6c9;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+
+.btn-warning:hover, .btn-warning:focus {
+  background-color: #81c784;
+  color: #fff;
+  border-color: #81c784;
+  box-shadow: 0 0 16px 4px #b9f6ca;
+}
+
+.btn-primary,
+.btn-warning,
+.start-button,
+.navbar .nav-link,
+.navbar .dropdown-toggle,
+.dropdown-menu .dropdown-item {
+  transition: box-shadow 0.2s, background 0.2s, color 0.2s;
+}
+
+/* ボタンの光る効果（薄い黄緑） */
+.btn-primary:hover, .btn-primary:focus,
+.btn-warning:hover, .btn-warning:focus,
+.start-button:hover, .start-button:focus {
+  box-shadow: 0 0 16px 4px #ccff90;
+}
+
+/* ナビゲーションリンクの光る効果 */
+.navbar .nav-link:hover,
+.navbar .nav-link:focus,
+.navbar .dropdown-toggle:hover,
+.navbar .dropdown-toggle:focus,
+.dropdown-menu .dropdown-item:hover,
+.dropdown-menu .dropdown-item:focus {
+  color: #fff !important;
+  background: #66bb6a !important;
+  box-shadow: 0 0 12px 2px #ccff90;
+  border-radius: 0.5rem;
+}
+
+/* スマホ対応 */
+@media (max-width: 576px) {
+  .container, .container-fluid {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+  .main-title, h1, h2 {
+    font-size: 1.3rem !important;
+  }
+  .btn, .btn-primary, .btn-warning, .start-button {
+    font-size: 1.1rem !important;
+    width: 100% !important;
+    min-width: 0 !important;
+    height: auto !important;
+    padding: 0.8rem 0.5rem !important;
+  }
+  .navbar-brand {
+    font-size: 1.1rem !important;
+  }
+  .navbar-nav .nav-link {
+    font-size: 1rem !important;
+    padding-left: 0.7rem !important;
+    padding-right: 0.7rem !important;
+  }
+  .dropdown-menu .dropdown-item {
+    font-size: 1rem !important;
+  }
+  .center-content {
+    position: static;
+    transform: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+}
+
+/* パスワードバリデーション用の補助テキストを目立たせる */
+.form-text.text-danger {
+  font-size: 1rem;
+  margin-top: 0.25rem;
+}
